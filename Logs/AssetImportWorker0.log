@@ -891,3 +891,4 @@ Received Import Request.
 Start importing Assets/LowPolyFoodLite/Prefabs/Cake.prefab using Guid(c6f47410b0c7bfa488e17d3d793d6de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c19e98472628f09c72aabef3f70dd9') in 0.236071 seconds 
   Import took 0.239909 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
