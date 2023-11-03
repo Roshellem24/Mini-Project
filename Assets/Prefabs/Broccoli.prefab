@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8888764522975995125}
   - component: {fileID: 26956322943090275}
   - component: {fileID: 1498233645789404087}
+  - component: {fileID: -4624359795168590765}
   m_Layer: 0
   m_Name: Broccoli
   m_TagString: Respawn
@@ -92,7 +93,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7686523862810620897}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.06815638, y: 0.08818184, z: 0.06955941}
@@ -126,3 +127,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 2
+--- !u!114 &-4624359795168590765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7686523862810620897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031e27ee937c42f448f54e63e1c3f14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7227223846507101688}
   - component: {fileID: -1159694462058929742}
   - component: {fileID: -3699671165346346792}
+  - component: {fileID: 6446320127627382235}
   m_Layer: 0
   m_Name: Donut
   m_TagString: Respawn
@@ -92,7 +93,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8600180940938398042}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.13197555, y: 0.04709317, z: 0.13197553}
@@ -126,3 +127,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 2
+--- !u!114 &6446320127627382235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600180940938398042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031e27ee937c42f448f54e63e1c3f14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
