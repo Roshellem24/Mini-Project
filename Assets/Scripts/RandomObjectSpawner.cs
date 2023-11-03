@@ -4,24 +4,34 @@ using UnityEngine;
 
 public class RandomObjectSpawner: MonoBehaviour
 {
-    public GameObject[] myObjects;
-    public float speed = 10.0f;
-    private Rigidbody rb;
+    public float range;
+    public float delay;
+    public GameObject[] objectsToSpawn;
+
+    private Transform spawnParent;
+
 
     void Start ()
     {
-        rb = this.GetComponent<Rigidbody>();
+        spawnParent = GameObject.Find("Spawned Objects").transform;
+        StartCoroutine(WaitToSpawn());
     }
 
-    void Update()
+    IEnumerator WaitToSpawn()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            int randomIndex = Random.Range(0, myObjects.Length);
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(-10, 11), 5, Random.Range(-10, 11));
+        yield return new WaitForSeconds(delay);
+        Spawn();
 
-            Instantiate(myObjects[randomIndex], randomSpawnPosition, Quaternion.identity);
-        }
 
     }
+
+    void Spawn ()
+    {
+        Instantiate(objectsToSpawn[Random.Range(0, objectsToSpawn.Length)], new Vector3 (transform.position.x + Random.Range(-range, range), transform.position.y, transform.position.z),
+            Random.rotation, spawnParent);
+        StartCoroutine(WaitToSpawn());
+    }
+
+   
+      
 }
